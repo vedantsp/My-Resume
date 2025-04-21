@@ -1,7 +1,7 @@
 # Vedant’s Resume Viewer
 
-## Live Demo  
-👉 [View the site here](https://your‑vercel‑link.vercel.app) <!-- replace with your real URL -->
+## Resume Website  
+👉 [View the site here](https://vedantresume.vercel.app) <!-- replace with your real URL -->
 
 ## Screenshot  
 <img src="./docs/resume_screenshot.png" width="800" alt="Screenshot of Vedant’s Resume Viewer" />
