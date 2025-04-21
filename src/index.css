@@ -1,13 +1,68 @@
-body {
+/* ---------- Global Styles ---------- */
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;                           /* Page itself never scrolls */
+  background: url('./assets/pewdiepie-pattern.png') center/cover no-repeat fixed;
+  font-family: 'Inter', sans-serif;
+  color: #eee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ---------- Layout Wrapper ---------- */
+.app-container {
+  position: absolute;                         /* Pin to viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.app-container h1 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #fff;
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ccc;
+}
+
+/* ---------- Resume Card ---------- */
+.resume-viewer {
+  width: 70%;
+  max-width: 900px;
+  flex: 1;                                    /* Take remaining height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-button {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #00ff80;
+  color: #0a0a0a;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+.download-button:hover {
+  background-color: #00cc66;
+  transform: translateY(-2px);
+}
+
+/* ---------- Scrollable PDF ---------- */
+.resume-frame {
+  width: 100%;
+  flex: 1;                                    /* Fill remaining space */
+  border: none;
+  overflow: auto;                             /* Internal scroll */
 }
